@@ -1,0 +1,360 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body , .fo-karla{
+    font-family: 'Karla', sans-serif !important;
+}
+.fo-lora{
+    font-family: 'Karla', sans-serif;
+    font-family: 'Lora', serif;
+}
+.fo-sans {
+    font-family: sans-serif !important;
+}
+body#home {
+    overflow-x: hidden !important;
+}
+section{
+  position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Playfair Display' !important;
+}
+a:hover{
+  text-decoration: none !important;
+}
+.btn-primary {
+    color: #313a45 !important;
+    background-color: #f7c411 !important;
+    border-color: #f7c411 !important;
+}
+input:focus-visible {
+    outline-offset: 0px;
+    outline: none;
+}
+/********************************FONTS ****************************************/
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/playfair/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('fonts/playfair/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/****************************FONTS END ***************************************/
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica/Helvetica.woff2') format('woff2'),
+        url('fonts/helvetica/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/****************************FONTS END ***************************************/
+
+/***************************** HEADER CSS********************************************/
+a.text-light:focus, a.text-light:hover {
+    color: #16b4ef !important;
+}
+#home .emergency_number, #home .emergency_number::after, .contact_info_cotainer {
+    background: #3ac4fa none repeat scroll 0 0;
+}
+#home .site-login ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0 0 0 14px;
+}
+#home .site-login > ul > li > a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#home .emergency_number::after {
+    background: #3ac4fa none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/***************************** HEADER CSS END********************************************/
+/********************************** CAROUSEL CSS **********************************************/
+.banner_wrapper {
+    font-family: "Playfair Display",serif;
+}
+/* Parallax animation effects */
+.hero-carousel .carousel-item .carousel-image {
+  transform: scale(1) translateX(0);
+  transition: all 0.6s;
+}
+
+.hero-carousel .carousel-item.carousel-item-next .carousel-image,
+.hero-carousel .carousel-item.active.carousel-item-right .carousel-image {
+  transform: scale(1.3) translateX(-50%);
+}
+
+.hero-carousel .carousel-item.carousel-item-prev .carousel-image,
+.hero-carousel .carousel-item.active.carousel-item-left .carousel-image {
+  transform: scale(1.3) translateX(50%);
+}
+
+.hero-carousel
+  .carousel-item.carousel-item-next.carousel-item-left
+  .carousel-image,
+.hero-carousel
+  .carousel-item.carousel-item-prev.carousel-item-right
+  .carousel-image {
+  /*transform: scale(1);*/
+  transform: scale(1) translateX(0);
+}
+
+/* Makes carousel full screen */
+.hero-carousel .carousel-item {
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-carousel .carousel-item .carousel-image {
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#carouselExampleIndicators {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-caption {
+   top: 40% !important;
+    left: 7% !important;
+   text-align: left !important;
+}
+
+/********************************** CAROUSEL CSS END**********************************************/
+/********************************** BOOKING AREA**********************************************/
+.hotel_booking_area {
+    left: calc( 50% - 585px );
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#home .hotel_booking_area {
+    z-index: 200;
+}
+#home .special_offer_main {
+     top: 100%;
+     right: 0;
+}
+.room_book p {
+   font-size: 30px;
+  font-weight: 700;
+  line-height: 25px;
+  
+}
+/*****************section welcome csss*************/
+.navbar-toggler-icon {
+    background-image: var(--bs-navbar-toggler-icon-bg) !important;
+   }
+.navbar-toggler {
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color) !important;
+}
+.welcome_to_hotel p {
+     font-family: 'Helvetica';
+     font-weight: normal;
+}
+h2:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0) url("../../images/nice-title.png") no-repeat scroll 0 0;
+    width: 103px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 17px;
+    height: 20px;
+}
+body#home .welcome_to_hotel .single_room_left_title > p > span, .accomodation_single_room .left_room_title > p > span {
+    font-size: 11px;
+}
+.m-17{
+  margin-right: -17px;
+  margin-bottom: -17px;
+}
+.single_room_overlay_panel {
+    height: 20px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.feature_box_hover_box:hover .single_room_overlay_panel {
+    height: 100%;
+    opacity: 1;
+    transition: .5s ease;
+}
+.feature_box_hover_box:hover .single_room_right_title .btn {
+    background: #39c0ed!important;
+    color: #fff !important;
+    border: 2px solid #39c0ed!important;
+}
+/**************features****************/
+section.hotel_facilities {
+    background: url(../../images/hotel-facilities-bg.jpg) no-repeat fixed center;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #17a2b8!important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.nav-tabs .nav-item {
+    background: #efefef !important;
+}
+.bg-tab{
+    background: #eeefed !important;
+}
+/************************* customer says *****************/
+#customer_reviews_slider .customer_comment {
+    background: rgba(0, 0, 0, 0) url("../../images/customer-slider-bg.png") no-repeat scroll 0 0 / cover;
+    padding: 25px 34px 23px;
+}
+.border-bottom-dark-2 {
+    border-bottom: solid 2px #475362;
+}
+.image_gallary_controls {
+    transform: rotate(90deg);
+}
+/*******image carousel*****/
+.image_gallary .carousel-inner img {
+  width: 700px;
+  height: 250px;
+}
+.carousel-indicators{
+  display: inline-block !important;
+  height: 300px !important;
+  position:static !important;
+  direction: rtl !important;
+  margin: 0 !important;
+}
+.item{
+  margin-bottom:10px;
+  margin-left: 10px;
+  cursor:pointer;
+}
+.item img{
+  border:1px solid transparent;
+  opacity:1;
+  transition:0.5s;
+}
+.item:hover img{
+  border:1px solid red;
+  opacity:1;
+}
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+  -webkit-transform: translate3d(0,-100%, 0);
+  transform: translate3d(0,-100%, 0);
+}
+/***************newsletter******************/
+.news_letter:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+.footer_copyright{text-align: center;
+}
+/*******************media ********************/
+@media only screen and (max-width: 767px){
+    .section_title_disrciption{
+        width: 100% !important;
+    }
+    .single_room.feature_box_wrapper{
+            text-align: center;
+    }
+ #home .special_offer_main {
+    top: 0;
+    right: -104px;
+}
+#home .special_offer_main img{width: 50%;}
+        .hero-carousel .carousel-item .carousel-image {
+            height: 800px;
+        }
+        .room_book {
+            margin-bottom: 13px;
+        }
+        .hotel_booking_area {
+            left: calc(50% - -84px);
+            top: 0;
+            width: 40%;
+        }
+        .special_offer_main{display: none;}
+        .form-group {
+            margin-bottom: 12px !important;
+        }
+        .carousel-caption {
+            top: 40px !important;
+            left: 40px !important;
+          }
+          .news_letter {
+    margin-bottom: 20px !important;
+}
+    .footer_copyright{text-align: left;}
+    }
+@media screen and (min-width: 576px) and (max-width: 879px) {
+  .carousel-inner{
+    margin-left: 50px;
+  }
+  .content{
+    position: static;
+  }
+}
+@media screen and (min-width: 880px) and (max-width: 1199px) {
+  .carousel-inner{
+    margin-left: 20px;
+  }
+  .content{
+    position: static;
+  }
+}
+@media screen and (max-width:992px){
+  .carousel-indicators{
+    display: inline-flex;
+    direction: inherit;
+    height: auto;
+    width: 100%;
+    max-width:800px;
+    overflow-x: auto;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-y: hidden;
+    justify-content: normal;
+    margin-bottom:20px;
+  }
+  .carousel-inner{
+    margin-left:0!important;
+  }
+  .carousel-inner img{
+    width:100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carousel-inner{
+    margin-left: -60px;
+  }
+}

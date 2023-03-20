@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/css.css">
+<!------------------- KARLA FONT FAMILY-------------------------------------------------------------->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+<!--------------------------------------------------- Bootstrap css ----------------------------------------------------->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600;700&family=Lora&display=swap');
+</style>
+<title>Hotel Booking System</title>
+</head>
+<body id="home" class="fs-6 fw-normal">
+	<header class="position-relative sticky-top">
+		<div class="container">
+		<nav class="navbar navbar-expand-lg bg-transparent px-2 py-4">
+  			<div class="container">
+  				<div class="site_logo">
+    							<a class="navbar-brand" href="#"><img src="images/logo-1.png" alt="Voppell_logo"></a>
+    							<div class="site-login float-end">
+    								<ul>
+                          <li><a href="#" class="text-dark">Login</a></li>
+                          <li><a href="booking.html" class="text-dark">Register</a></li>
+                    </ul>
+    							</div>
+    			</div>
+    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    			</button>
+    			
+    			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        				<li class="nav-item">
+          					<a class="nav-link active px-3" aria-current="page" href="#">HOME</a></li>
+        				<li class="nav-item">
+          					<a class="nav-link px-3" href="#">ACCOMODATION</a></li>
+        				<li class="nav-item">
+          					<a class="nav-link px-3" href="#">GALLERY</a></li>
+                 		<li class="nav-item">
+          					<a class="nav-link px-3" href="#">FEATURES</a></li>
+          				<li class="nav-item">
+          					<a class="nav-link px-3" href="#">NEWS</a></li>
+          				<li class="nav-item">
+          					<a class="nav-link px-3" href="#">CONTACT</a></li>
+          					<li class="emergency_number position-relative p-2">
+                  <a href="tel:1234567890" class="text-white h5">
+                  		<img src="images/call-icon.png" alt="call-icon" class="me-2">123 456 7890</a>
+              </li>
+      				</ul>
+      				
+         		</div>
+  			</div>
+		</nav>
+	</div>
+	</header>
+<!------------------------------------------------- Banner Section ------------------------------------------------->
+<section class="banner_wrapper position-relative">				
+				<div id="carouselExampleIndicators" class="carousel slide hero-carousel" data-ride="carousel">
+  					<ol class="carousel-indicators d-none">
+    						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  					</ol>
+  					<div class="carousel-inner">
+    						<div class="carousel-item active">
+      							<div class="carousel-image" style="background-image: url('https://images.pexels.com/photos/601798/pexels-photo-601798.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');"></div>
+      										<div class="carousel-caption d-block">
+        											<h1 class="heading-1 mb-4 display-4 w-75">Traveling just got a little easier</h1>
+        											<div class="btn-banner p-2 bg-warning d-inline-block">
+          											<a class="btn btn-primary rounded-0 border-success border text-uppercase text-dark" href="#" role="button" target="_blank">See more of the world</a>
+        											</div>
+      										</div>
+    						</div>
+    						<div class="carousel-item">
+      							<div class="carousel-image" style="background-image: url('https://images.pexels.com/photos/2646380/pexels-photo-2646380.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');"></div>
+      										<div class="carousel-caption d-block">
+        											<h1 class="heading-1 mb-4 display-4 w-75">Dive into summer with Star Rated Hotels and Resorts</h1>
+        											<div class="btn-banner p-2 bg-warning d-inline-block">
+          											<a class="btn btn-primary rounded-0 border-success border text-uppercase text-dark" href="#" role="button" target="_blank">See more of the world</a>
+        											</div>
+      					    			</div>
+    					</div>
+    					<div class="carousel-item">
+      							<div class="carousel-image" style="background-image: url('https://images.pexels.com/photos/2646380/pexels-photo-2646380.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');"></div>
+      										<div class="carousel-caption d-block">
+        											<h1 class="heading-1 mb-4 display-4 w-75">A brand New Hotel Beyond Ordinary</h1>
+        											<div class="btn-banner p-2 bg-warning d-inline-block">
+          											<a class="btn btn-primary rounded-0 border-success border text-uppercase text-dark" href="#" role="button" target="_blank">See more of the world</a>
+        											</div>
+      					    			</div>
+    					</div>
+  
+  				</div>
+  				<a class="carousel-control-prev position-absolute top-50 bottom-0 start-45 w-5" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+  				</a>
+  				<a class="carousel-control-next position-absolute top-50 bottom-0 end-45 w-5" href="#carouselExampleIndicators" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+  				</a>
+			</div>
+<!--------------------------HOTEL BOOKING AREA---------------------------------------------------->
+			<div class="hotel_booking_area position-absolute m-auto">
+                    <div class="container">
+                        <div class="hotel_booking position-relative text-white py-4 px-3 fo-karla bg-dark">
+                            <form id="form1" role="form" action="#" class="row align-items-center">
+                                <div class="col-lg-2 col-md-2 col-xs-12">
+                                    <div class="room_book border-end border-light me-1">
+                                        <h6 class="text-white m-0 fo-karla fs-5">Book Your</h6>
+                                        <p class="m-0 text-white fo-karla">Rooms</p>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-2 col-md-2 col-xs-12 m-0">
+                                    <label for="arrival_date" class="m-0 ps-3">Arrival</label>
+                                    <div class="input-group border-bottom-dark-2 w-100 align-items-center">
+                                        <input type="date" class="form-control date-picker bg-transparent border-0 text-white text-uppercase" id="arrival_date" placeholder="Arrival">
+                                        
+                        <!--                <div class="input-group-addon d-inline">
+                                            <i class="fa fa-calendar"></i></div>             -->
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-2 col-md-2 col-xs-12 m-0">
+                                    <label for="departure_date" class="m-0 ps-3">Departure</label>
+                                    <div class="input-group border-bottom-dark-2 align-items-center">
+                                        <input class="form-control date-picker bg-transparent border-0 text-white text-uppercase"  id="departure_date"  placeholder="Departure" type="date">
+
+                        <!--                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>       -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="row align-items-center">
+                                        <div class="form-group col-lg-3 col-md-3 col-xs-12 icon_arrow m-0">
+                                            <label for="room" class="m-0 ps-3">Rooms</label>
+                                            <div class="input-group border-bottom-dark-2">
+                                                <select class="form-control bg-transparent border-0" name="room" id="room">
+                                                  <option selected="selected" disabled="disabled">Rooms</option>
+                                                  <option value="Single">1 Room</option>
+                                                  <option value="Double">2 Room</option>
+                                                  <option value="Deluxe">3 Room</option>
+                                                </select>               
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-3 col-md-3 col-xs-12 icon_arrow m-0">
+                                            <label for="adult" class="m-0 ps-3">Adult</label>
+                                            <div class="input-group border-bottom-dark-2">
+                                                <select class="form-control bg-transparent border-0" name="adult" id="adult">
+                                                  <option selected="selected" disabled="disabled">Adult</option>
+                                                  <option value="Single">1 Adult</option>
+                                                  <option value="Double">2 Adult</option>
+                                                  <option value="Deluxe">3 Adult</option>
+                                                </select>               
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-3 col-md-3 col-xs-12 icon_arrow m-0">
+                                            <label for="child" class="m-0 ps-3">Child</label>
+                                            <div class="input-group border-bottom-dark-2">
+                                                <select class="form-control bg-transparent border-0" name="child" id="child">
+                                                  <option selected="selected" disabled="disabled">Child</option>
+                                                  <option value="Single">0 Child</option>
+                                                  <option value="Double">1 Child</option>
+                                                  <option value="Deluxe">2 Child</option>
+                                                </select>               
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                            <a class="btn btn-primary rounded-0 px-4 py-2 fw-bold">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!--special offer start -->
+                  					<div class="special_offer_main position-absolute text-right">
+                                <img src="images/special-offer-main.png" alt="">
+                            </div>
+                            <!-- end offer start -->
+                       </div>
+                    </div>
+                </div>
+
+</section>
+
+<!------------------------------------BANNER NEXT SECTION---------------------------------------->
+<section class="welcome_to_hotel py-5">
+			<div class="container py-5">
+						<div class="row">
+									<div class="col">
+												<div class="section_title decorative_title text-center position-relative">
+														<h2 class="mb-5 d-inline-block text-black">WELCOME TO HOTEL</h2>
+													</div>
+													<div class="section_title_disrciption text-center position-relative px-5 w-50 m-auto pb-5 pt-4">
+														<p> Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero.</p>
+													</div>
+												</div>
+									</div>
+								<div class="row">
+											<div class="col-lg-3 col-md-6 col-xs-12 text-center">
+													<div class="single_room feature_box_wrapper d-inline-block overflow-hidden">
+															<div class="feature_box_hover_box overflow-hidden d-inline-block position-relative">
+																	<div class="feature_box_image single_room_media mb-3 text-center d-inline-block">
+																			<a href="#"><img src="images/room-image-1.png" alt="room-image"></a>
+																		</div>
+																		<div class="feature_box_discription single_room_disription d-flex justify-content-between align-items-center d-block border-bottom">
+																				<div class="single_room_left_title">
+																					<h6>Deluxe Room</h6>
+																					<p class="my-3">$200/ <span>night</span></p>
+																				</div>
+																				<div class="single_room_right_title">
+																					<div class="btn border-info border border-2 text-info rounded-0 shadow-none">BOOK</div>
+																	
+															          </div>		
+														        </div>
+														        <div class="single_room_overlay_panel bg-warning p-3 single_wrapper_details position-absolute top-0 end-0 bottom-0 start-0 overflow-hidden text-dark">
+                                            <div class="border-dark-1 p-3 clearfix border-dark border single_wrapper_details_pad">
+                                            	
+                                                		<h5>Deluxe Room</h5>
+                                                		<p>Semper ac dolor vitae accumsan. interdum hendrerit lacinia.</p>
+                                                		<p class="mb-3">Phasellus accumsan urna vitae molestie interdum.</p>
+                                                		<div class="single_room_cost d-flex justify-content-between align-items-baseline d-block">
+                                                					<div class="floatleft">
+                                                        				<p class="m-0">$200/ <span>night</span></p>
+                                                    			</div>
+                                                    			<div class="floatright">
+                                                        				<a href="#" class="btn border-dark border-top border-left rounded-0 m-17 shadow-none">Book</a>
+                                                    			</div>
+                                                   		</div>
+                                                
+                                            </div>
+                                    </div>
+											        </div>
+									       </div>
+			               </div>
+<!------------------------col 1 ends here--------------------------------------------->			               
+			              <div class="col-lg-3 col-md-6 col-xs-12 text-center">
+								<div class="single_room feature_box_wrapper o d-inline-blockverflow-hidden">
+									<div class="feature_box_hover_box overflow-hidden d-inline-block position-relative">
+										<div class="feature_box_image single_room_media mb-3 text-center d-inline-block">
+											<a href="#"><img src="images/room-image-2.png" alt="room-image"></a>
+										</div>
+										<div class="feature_box_discription single_room_disription d-flex justify-content-between align-items-center d-block border-bottom">
+											<div class="single_room_left_title">
+												<h6>Double Room</h6>
+												<p class="my-3">$150/ <span>night</span></p>
+											</div>
+											<div class="single_room_right_title">
+												 <div class="btn border-info border border-2 text-info rounded-0 shadow-none">BOOK</div>
+																	
+										    </div>		
+										 </div>
+									<div class="single_room_overlay_panel bg-warning p-3 single_wrapper_details position-absolute top-0 end-0 bottom-0 start-0 overflow-hidden text-dark">
+                                            <div class="border-dark-1 p-3 clearfix border-dark border single_wrapper_details_pad">
+                                            	<h5>Double Room</h5>
+                                                <p>Semper ac dolor vitae accumsan. interdum hendrerit lacinia.</p>
+                                                <p class="mb-3">Phasellus accumsan urna vitae molestie interdum.</p>
+                                                <div class="single_room_cost d-flex justify-content-between align-items-baseline d-block">
+                                                		<div class="floatleft">
+                                                        	<p class="m-0">$150/ <span>night</span></p>
+                                                    	</div>
+                                                    	<div class="floatright">
+                                                        	<a href="#" class="btn border-dark border-top border-left rounded-0 m-17 shadow-none">Book</a>
+                                                    	</div>
+                                                </div>
+                                                
+                                            </div>
+                                    </div>
+							     </div>
+						      </div>
+			      </div>
+<!------------------------col 2 ends here--------------------------------------------->		   
+			     <div class="col-lg-3 col-md-6 col-xs-12 text-center">
+						<div class="single_room feature_box_wrapper  d-inline-blockoverflow-hidden">
+							<div class="feature_box_hover_box overflow-hidden d-inline-block position-relative">
+								<div class="feature_box_image single_room_media mb-3 text-center d-inline-block">
+									<a href="#"><img src="images/room-image-3.jpg" alt="room-image"></a>
+								</div>
+								<div class="feature_box_discription single_room_disription d-flex justify-content-between align-items-center d-block border-bottom">
+									<div class="single_room_left_title">
+										<h6>Single Room</h6>
+										<p class="my-3">$180/ <span>night</span></p>
+									</div>
+									<div class="single_room_right_title">
+									    <div class="btn border-info border border-2 text-info rounded-0 shadow-none">BOOK</div>
+									</div>		
+								</div>
+							<div class="single_room_overlay_panel bg-warning p-3 single_wrapper_details position-absolute top-0 end-0 bottom-0 start-0 overflow-hidden text-dark">
+                                <div class="border-dark-1 p-3 clearfix border-dark border single_wrapper_details_pad">
+                                            <h5>Single Room</h5>
+                                            <p>Semper ac dolor vitae accumsan. interdum hendrerit lacinia.</p>
+                                            <p class="mb-3">Phasellus accumsan urna vitae molestie interdum.</p>
+                                     <div class="single_room_cost d-flex justify-content-between align-items-baseline d-block">
+                                           <div class="floatleft"><p class="m-0">$180/ <span>night</span></p></div>
+                                           <div class="floatright"><a href="#" class="btn border-dark border-top border-left rounded-0 m-17 shadow-none">Book</a></div>
+                                    </div>
+                                                
+                                </div>
+                            </div>
+						</div>
+				  </div>
+			</div>
+<!------------------------col 3 ends here--------------------------------------------->	
+			<div class="col-lg-3 col-md-6 col-xs-12 text-center">
+					<div class="single_room feature_box_wrapper d-inline-block overflow-hidden">
+					<div class="feature_box_hover_box overflow-hidden d-inline-block position-relative">
+						<div class="feature_box_image single_room_media mb-3 text-center d-inline-block">
+								<a href="#"><img src="images/room-image-4.png" alt="room-image"></a>
+						</div>
+						<div class="feature_box_discription single_room_disription d-flex justify-content-between align-items-center d-block border-bottom">
+								<div class="single_room_left_title">
+									 <h6>Kids Room</h6>
+									<p class="my-3">$140/ <span>night</span></p>
+								</div>
+								<div class="single_room_right_title">
+									<div class="btn border-info border border-2 text-info rounded-0 shadow-none">BOOK</div>
+								</div>		
+						</div>
+					<div class="single_room_overlay_panel bg-warning p-3 single_wrapper_details position-absolute top-0 end-0 bottom-0 start-0 overflow-hidden text-dark">
+                            <div class="border-dark-1 p-3 clearfix border-dark border single_wrapper_details_pad">
+                                            	<h5>Kids Room</h5>
+                                                <p>Semper ac dolor vitae accumsan. interdum hendrerit lacinia.</p>
+                                                <p class="mb-3">Phasellus accumsan urna vitae molestie interdum.</p>
+                            <div class="single_room_cost d-flex justify-content-between align-items-baseline d-block">
+                                                <div class="floatleft"><p class="m-0">$140/ <span>night</span></p></div>
+                                                <div class="floatright"><a href="#" class="btn border-dark border-top border-left rounded-0 m-17 shadow-none">Book</a></div>
+                            </div>
+                                                
+                            </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+<!------------------------col 4 ends here--------------------------------------------->			
+			    </div>
+			</div>
+</section>
+<!-------------------------------------WELCOME SECTION ENDS HERE-------------------------------->  
+<section class="hotel_facilities py-5">
+    <div class="container py-5">
+        <div class="row">
+                <div class="col">
+                        <div class="section_title decorative_title text-center position-relative">
+                            <h2 class="mb-5 d-inline-block text-black text-uppercase">Hotel facilties</h2>
+                        </div>
+                </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <ul class="nav nav-tabs m-auto justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active rounded-0 bg-tab p-3" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                            <img src="images/icons8-restaurant-50.png" alt="restaurant" class="d-block w-50 mb-3 mx-auto"><span class="text-uppercase fs-6">RESTAURANT</span>
+                        </a>
+                    </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link rounded-0 bg-tab p-3" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><img src="images/icons8-trophy-cup-96.png" alt="restaurant" class="d-block w-50 mb-3 mx-auto"><span class="text-uppercase fs-6">SPORTS CLUB</span></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link rounded-0 bg-tab p-3" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><img src="images/icons8-sedan-96.png" alt="restaurant" class="d-block w-50 mb-3 mx-auto"><span class="text-uppercase fs-6">PICKUP</span></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link rounded-0 bg-tab p-3" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"><img src="images/icons8-wine-bar-96.png" alt="restaurant" class="d-block w-50 mb-3 mx-auto"><span class="text-uppercase fs-6">BAR</span></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link rounded-0 bg-tab p-3" id="gym-tab" data-bs-toggle="tab" data-bs-target="#gym-tab-pane" type="button" role="tab" aria-controls="gym-tab-pane" aria-selected="false"><img src="images/icons8-stepper-96.png" alt="restaurant" class="d-block w-50 mb-3 mx-auto"><span class="text-uppercase fs-6">GYM</span></a>
+  </li>
+</ul>
+<div class="tab-content p-5 bg-white" id="myTabContent">
+  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="single-tab-content">
+                                        <div class="row">
+                                            <div class="co-lg-5 col-md-5 col-xs-12">
+                                                <div class="single-tab-image">
+                                                    <a href="#"><img src="images/hotel-facility-one.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="co-lg-7 col-md-7 col-xs-12">
+                                                <div class="single-tab-details text-left text-black px-3">
+                                                    <h6 class="text-uppercase" style="font-family: Karla !important;">The world class</h6>
+                                                    <h3 class="text-uppercase mb-4">Restaurant &amp; Banquets</h3>
+                                                    <p class="text-dark">
+                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                    </p>
+                                                    <p class="text-dark">
+                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                    </p>
+                                                    <div class="our_services text-uppercase">
+                                                        <a href="#" class="me-5 text-info">Service Hours; 19.00-22:00 </a>
+                                                        <a href="#" class="text-info">service charge : $15</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+        </div>
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="single-tab-content">
+                                        <div class="row">
+                                            <div class="co-lg-5 col-md-5 col-xs-12">
+                                                <div class="single-tab-image">
+                                                    <a href="#"><img src="images/hotel-facility-2.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="co-lg-7 col-md-7 col-xs-12">
+                                                <div class="single-tab-details text-left text-black px-3">
+                                                    <h6 class="text-uppercase" style="font-family: Karla !important;">The world class</h6>
+                                                    <h3 class="text-uppercase mb-4">SPORTS CLUB</h3>
+                                                    <p class="text-dark">
+                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                    </p>
+                                                    <p class="text-dark">
+                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                    </p>
+                                                    <div class="our_services text-uppercase">
+                                                        <a href="#" class="me-5 text-info">Service Hours; 19.00-22:00 </a>
+                                                        <a href="#" class="text-info">service charge : $15</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        </div>
+  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <div class="single-tab-content">
+                                        <div class="row">
+                                            <div class="co-lg-5 col-md-5 col-xs-12">
+                                                <div class="single-tab-image">
+                                                    <a href="#"><img src="images/hotel-facility-one.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="co-lg-7 col-md-7 col-xs-12">
+                                                <div class="single-tab-details text-left text-black px-3">
+                                                    <h6 class="text-uppercase" style="font-family: Karla !important;">The world class</h6>
+                                                    <h3 class="text-uppercase mb-4">PICK UP</h3>
+                                                    <p class="text-dark">
+                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                    </p>
+                                                    <p class="text-dark">
+                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                    </p>
+                                                    <div class="our_services text-uppercase">
+                                                        <a href="#" class="me-5 text-info">Service Hours; 19.00-22:00 </a>
+                                                        <a href="#" class="text-info">service charge : $15</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+  </div>
+  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+        <div class="single-tab-content">
+                                        <div class="row">
+                                            <div class="co-lg-5 col-md-5 col-xs-12">
+                                                <div class="single-tab-image">
+                                                    <a href="#"><img src="images/hotel-facility-2.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="co-lg-7 col-md-7 col-xs-12">
+                                                <div class="single-tab-details text-left text-black px-3">
+                                                    <h6 class="text-uppercase" style="font-family: Karla !important;">The world class</h6>
+                                                    <h3 class="text-uppercase mb-4">BAR</h3>
+                                                    <p class="text-dark">
+                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                    </p>
+                                                    <p class="text-dark">
+                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                    </p>
+                                                    <div class="our_services text-uppercase">
+                                                        <a href="#" class="me-5 text-info">Service Hours; 19.00-22:00 </a>
+                                                        <a href="#" class="text-info">service charge : $15</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+  </div>
+  <div class="tab-pane fade" id="gym-tab-pane" role="tabpanel" aria-labelledby="gym-tab" tabindex="0">
+                                <div class="single-tab-content">
+                                        <div class="row">
+                                            <div class="co-lg-5 col-md-5 col-xs-12">
+                                                <div class="single-tab-image">
+                                                    <a href="#"><img src="images/hotel-facility-one.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="co-lg-7 col-md-7 col-xs-12">
+                                                <div class="single-tab-details text-left text-black px-3">
+                                                    <h6 class="text-uppercase" style="font-family: Karla !important;">The world class</h6>
+                                                    <h3 class="text-uppercase mb-4">GYM</h3>
+                                                    <p class="text-dark">
+                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                    </p>
+                                                    <p class="text-dark">
+                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                    </p>
+                                                    <div class="our_services text-uppercase">
+                                                        <a href="#" class="me-5 text-info">Service Hours; 19.00-22:00 </a>
+                                                        <a href="#" class="text-info">service charge : $15</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                    </div>
+<!------------------------------------ TAB 4 CONTENT ENDS HERE ------------------------------------>                    
+            </div>
+<!----------------------------------- TAB CONTENT ENDS HERE ------------------------------------------>
+        </div>
+    </div>
+</div>
+</section>
+<!------------------------------------------FEATURES ENDS HERE----------------------------------------------------->
+<section class="insights_section py-5">
+    <div class="container py-5">
+            <div class="row">
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div class="blog_wrapper">
+                            <h5 class="text-black mb-5">NEWS</h5>
+                            <div class="blog_content d-flex align-items-start border-bottom pb-4">
+                                 <div class="blog_media pe-3"><img src="images/news-one.jpg" alt="news"></div>
+                                 <div class="blog_content">
+                                    <h6 class="blog_title text-uppercase text-black fo-karla fw-lighter">Quisque at felis port titordga</h6>
+                                    <p class="blog_date text-dark fo-karla fs-12 m-0"><span>14 May 2014</span></p>
+                                </div>
+                            </div>
+    <!-------------------- first blog ends here -------------------------------->
+                            <div class="blog_content d-flex align-items-start border-bottom pb-4 pt-4">
+                                 <div class="blog_media pe-3"><img src="images/news-two.jpg" alt="news"></div>
+                                 <div class="blog_content">
+                                    <h6 class="blog_title text-uppercase text-black fo-karla fw-lighter">Donec scelerisque vulputate</h6>
+                                    <p class="blog_date text-dark fo-karla fs-12 m-0"><span>15 May 2014</span></p>
+                                </div>
+                            </div>
+    <!-------------------- second blog ends here -------------------------------->
+                            <div class="blog_content d-flex align-items-start border-bottom pb-4 pt-4">
+                                 <div class="blog_media pe-3"><img src="images/news-three.jpg" alt="news"></div>
+                                 <div class="blog_content">
+                                    <h6 class="blog_title text-uppercase text-black fo-karla fw-lighter">Curabitur varius quam lorem</h6>
+                                    <p class="blog_date text-dark fo-karla fs-12 m-0"><span>17 May 2014</span></p>
+                                </div>
+                            </div>
+    <!-------------------- third blog ends here -------------------------------->
+                        </div>
+                    </div>
+    <!-------------------------------- COL 1 ENDS HERE ---------------------------------->
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <h5 class="text-black mb-5 text-uppercase">Hotel Showcase</h5>
+                                      <div id="demo" class="carousel slide vert image_gallary" data-ride="carousel" data-interval="3000">
+            <div class="row no-gutters">
+
+              <div class="col-xs-12 col-md-12 col-lg-9">
+        
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img class="img-fluid" src="https://www.w3schools.com/howto/img_woods_wide.jpg" alt="">
+            
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://www.w3schools.com/howto/img_5terre_wide.jpg" alt="">
+            
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt="">
+           
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://www.w3schools.com/howto/img_lights_wide.jpg" alt="">
+            
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="">
+            
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="">
+            
+          </div>
+<!----------------------------------- Controls -->
+                                    <a class="image_gallary_controls position-absolute top-0 start-45 rounded-circle border" href="#demo" role="button" data-slide="prev">
+                                        <i class="fa fa-angle-left p-2 text-white"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="image_gallary_controls position-absolute bottom-0 start-45 rounded-circle border" href="#demo" role="button" data-slide="next">
+                                        <i class="fa fa-angle-right p-2 text-white"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+
+        </div><!--inner-->
+      
+      </div><!-- col-sm-6  -->
+
+      <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3">
+        <div class="carousel-indicators overflow-hidden">
+          <div data-target="#demo" data-slide-to="0" class="item active"><img class="img-fluid" src="https://www.w3schools.com/howto/img_woods_wide.jpg" alt=""></div>
+          <div data-target="#demo" data-slide-to="1" class="item"><img class="img-fluid" src="https://www.w3schools.com/howto/img_5terre_wide.jpg" alt=""></div>
+          <div data-target="#demo" data-slide-to="2" class="item"><img class="img-fluid" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt=""></div>
+          <div data-target="#demo" data-slide-to="3" class="item"><img class="img-fluid" src="https://www.w3schools.com/howto/img_lights_wide.jpg" alt=""></div>
+          <div data-target="#demo" data-slide-to="4" class="item"><img class="img-fluid" src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt=""></div>
+          <div data-target="#demo" data-slide-to="5" class="item"><img class="img-fluid" src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt=""></div>
+        </div>
+     
+      </div><!-- col-sm-4 Indicators -->  
+
+            </div><!--row-->
+        </div>
+                        
+                    </div>
+
+    <!-------------------------------- COL 2 ENDS HERE ---------------------------------->
+                     <div class="col-lg-3 col-md-3 col-xs-12">
+                       <div class="customer_says">
+                            <div class="section_title">
+                                <h5 class="text-black mb-5 text-uppercase">Customer Says</h5>
+                            </div>
+                            <div class="customer_says_description">
+                                <div id="customer_reviews_slider" class="carousel slide" data-ride="carousel" data-pause="none">
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item">
+                                            <div class="single_says">
+                                                <div class="customer_comment fo-sans">
+                                                    <p>
+                                                        Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan urna vitae molestie interdum.
+                                                    </p>
+                                                    <p>
+                                                        Nam sed placerat libero, non eleifend dolor.
+                                                    </p>
+                                                </div>
+                                                <div class="customer_detail d-flex">
+                                                    <div class="customer_pic pe-4">
+                                                        <a href="#"><img src="images/customer-says-one.png" alt=""></a>
+                                                    </div>
+                                                    <div class="customer_identity text-dark">
+                                                        <h6 class="text-uppercase">John Doe</h6>
+                                                        <p>www.john.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <div class="single_says">
+                                                <div class="customer_comment fo-sans">
+                                                    <p>
+                                                        Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan urna vitae molestie interdum.
+                                                    </p>
+                                                    <p>
+                                                        Nam sed placerat libero, non eleifend dolor.
+                                                    </p>
+                                                </div>
+                                                <div class="customer_detail d-flex">
+                                                    <div class="customer_pic pe-4">
+                                                        <a href="#"><img src="images/customer-says-one.png" alt=""></a>
+                                                    </div>
+                                                    <div class="customer_identity text-dark">
+                                                        <h6 class="text-uppercase">John Doe</h6>
+                                                        <p>www.john.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Controls -->
+                                    <a class="slider_says position-absolute bottom-30 start-85" href="#customer_reviews_slider" role="button" data-slide="prev">
+                                        <i class="fa fa-angle-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="slider_says position-absolute bottom-30 end-5" href="#customer_reviews_slider" role="button" data-slide="next">
+                                        <i class="fa fa-angle-right"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+    <!-------------------------------- COL 3 ENDS HERE ---------------------------------->
+            </div>
+    <!------------------------------------------ row ends here -------------------------------------------------------->
+    </div>
+</section>
+<!-------------------------------------------------- CUSTOMER REVIWS SECTION ENDS HERE ---------------------------------------->
+<section class="contact_info fo-sans text-white">
+    <div class="container contact_info_cotainer text-white pb-3 pt-4">
+            <div class="row align-items-baseline">
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <ul class="call_us list-unstyled">
+                            <li class="text-uppercase fs-14">call us</li>
+                            <li class="fo-lora fs-5">123 456 7890</li>
+
+                        </ul>
+                    </div>
+    <!----------------------- col 1 ends here ------------------------>                
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <ul class="email_us list-unstyled">
+                            <li class="text-uppercase fs-14">email us</li>
+                            <li class="fo-lora fs-5">info@hotelbooking.com</li>
+                        </ul>
+                    </div>
+    <!----------------------- col 1 ends here ------------------------>
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div class="news_letter position-relative">
+                            <input type="text" placeholder="Enter ID  for News Letter" class="text-uppercase bg-transparent border-0 text-white  outline-none fs-14 py-2" ID="newsletter"><a href="#" class="btn bg-warning rounded-0 p-1 position-absolute end-0 top-0 text-white fs-14">GO</a>
+                        </div>
+                    </div>
+    <!----------------------- col 1 ends here ------------------------>
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div class="social_icons">
+                            <ul class="list-inline list-unstyled">
+                                <li class="list-inline-item me-3"><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                                <li class="list-inline-item me-3"><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                                <li class="list-inline-item me-3"><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+                                <li class="list-inline-item me-3"><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+    <!----------------------- col 1 ends here ------------------------>
+            </div>
+    </div>
+</section>
+<!-------------------------------------------------- FOOTER STARTS HERE ---------------------------------------------->
+<footer class="footer_area bg-dark text-light py-5 fo-sans">
+            <div class="container pt-5">
+                <div class="footer fw-light">
+                        <div class="footer_top">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-xs-12">
+                                        <div class="footer_logo mb-4"><a href="index.html"><img src="images/footer-logo-one.png" alt="footer-logo-on"></a></div>
+                                        <div class="logo_description mb-4">
+                                            <p>Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p>
+                                        </div>
+                                        <div class="footer_address d-flex align-items-baseline">
+                                            <i class="fa fa-map-marker pe-2"></i><p class="line-height-normal">St Amsterdam finland, <br> United Stats of AKY16 8PN</p>
+                                        </div>
+                                    </div>
+    <!--------------------------------- col-1 ends here --------------------------------------->
+                                    <div class="col-lg-4 col-md-4 col-xs-12">
+                                            <div class="footer_widget">
+                                                <div class="row">
+                                                    <h5 class="ps-4 mb-5 text-uppercase">Quick Links</h5>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                                            <ul class="list-unstyled">
+                                                                <li class="mb-4"><a href="#" class="text-light">Rooms</a></li>
+                                                                <li class="mb-4"><a href="#" class="text-light">Food &amp; Drinks</a></li>
+                                                                <li class="mb-4"><a href="#" class="text-light">Beach Venues</a></li>
+                                                                <li class="mb-4"><a href="#" class="text-light">Amenities</a></li>
+                                                            </ul>  
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 sol-sm-6">
+                                                            <ul class="list-unstyled">
+                                                                <li class="mb-4"><a href="#" class="text-light">Noordwijk</a></li>
+                                                                <li class="mb-4"><a href="#" class="text-light">Wellness</a></li>
+                                                                <li class="mb-4"><a href="#" class="text-light">Manifesto</a></li>
+                                                                <li class="mb-4"><a href="#" class="text-light">Contact</a></li>
+                                                           </ul>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                    </div>
+
+     <!------------------------------------ col- 2 ends here -------------------------------------->                               
+                                    <div class="col-lg-4 col-md-4 col-xs-12">
+                                            <div class="footer_widget">
+                                <h5 class="mb-5">We Are Global</h5>
+                                <div class="footer_map">
+                                    <a href="#"><img src="images/footer-map-two.jpg" alt=""></a>
+                                </div>
+                            </div>
+
+                                    </div>
+                        
+                        
+                               
+                            </div>
+                        </div>
+    <!----------------------------------- footer top ends here ----------------------------------->
+                            <div class="row">
+                            <div class="container">
+                                <div class="footer_copyright mt-5">
+                                    <p>© 2015 <a href="#" class="text-light">Hotelbooking</a>. All rights reserved</p>
+                                </div>
+                            </div>
+                             </div>
+                
+                 
+        </div>
+    </div>
+ </footer>
+</body>
+<!------------------------------------------------ Bootstrap js ---------------------------------------------------->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js" integrity="sha256-cVd/tGoi+gMVBrq5xd20ZA447xChtJWaESiLQc5LB1c=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+<script>
+	(function ($) {
+  $(document).ready(function () {
+    // Pause hero carousel
+    $(".hero-carousel").carousel("pause");
+  });
+})(jQuery);
+</script>
+<script src="https://kit.fontawesome.com/a183b3f07f.js" crossorigin="anonymous"></script>
+</html>
